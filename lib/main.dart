@@ -1,9 +1,10 @@
-import 'dart:js';
 import 'package:flutter/material.dart';
 import 'package:mad_lab/splashscreen.dart';
 import 'package:mad_lab/login.dart';
 import 'package:mad_lab/register.dart';
 import 'package:mad_lab/resetpass.dart';
+import 'package:mad_lab/pages/setup.dart';
+import 'package:mad_lab/pages/tp_sub.dart';
 void main() {
   runApp(
     MaterialApp(
@@ -16,6 +17,8 @@ void main() {
         'login': (context) => MyLogin(),
         'register': (context) => myRegister(),
         'forgot': (context) => resetPassword(),
+        "/setup": (context) => Setup(),
+        "/sub": (context) => TpSub(),
       },
     ),
   );

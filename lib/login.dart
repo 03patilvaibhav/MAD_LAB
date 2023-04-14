@@ -40,7 +40,7 @@ class _MyLoginState extends State<MyLogin> {
                       top: 60.0,
                     ),
                     child: Text(
-                      'OMS\n LOGIN',
+                      '\n LOGIN',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.white,
@@ -108,7 +108,9 @@ class _MyLoginState extends State<MyLogin> {
                                 primary: Colors.black,
                                 shape: StadiumBorder(),
                               ),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.pushNamed( context, '/setup');
+                              },
                               child: Row(
                                 mainAxisAlignment:
                                 MainAxisAlignment.spaceBetween,
@@ -133,6 +135,15 @@ class _MyLoginState extends State<MyLogin> {
                             },
                             child: Text(
                               'Register',
+                              style: TextStyle(color: Colors.black),
+                            ),
+                          ),
+                          TextButton(
+                            onPressed: () {
+                              Navigator.pushNamed(context, '/setup');
+                            },
+                            child: Text(
+                              'Home page',
                               style: TextStyle(color: Colors.black),
                             ),
                           ),
