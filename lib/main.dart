@@ -5,7 +5,10 @@ import 'package:mad_lab/register.dart';
 import 'package:mad_lab/resetpass.dart';
 import 'package:mad_lab/pages/setup.dart';
 import 'package:mad_lab/pages/tp_sub.dart';
-void main() {
+import 'package:firebase_core/firebase_core.dart';
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
