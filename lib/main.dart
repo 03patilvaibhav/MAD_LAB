@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       //home: MyHomePage(),
       routes: {
         'welcome':(context) => splashscreen(),
-        'login': (context) => MyLogin(),
+        //'login': (context) => MyLogin(),
         'register': (context) => myRegister(),
         'forgot': (context) => resetPassword(),
         "/setup": (context) => Setup(),

@@ -214,7 +214,7 @@ class _MyLoginState extends State<MyLogin> {
     final email = TextFormField(
       validator: (value) {
         bool isEmpty = value?.isEmpty ?? true;
-        bool containsValue = value?.contains('value') ?? false;
+        bool containsValue = value?.contains('@') ?? false;
         if (isEmpty || !containsValue) {
           return 'Please enter a valid email.';
         }
@@ -250,7 +250,12 @@ class _MyLoginState extends State<MyLogin> {
     final loginButton = Padding(
       padding: EdgeInsets.symmetric(vertical: 10.0),
       child: TextButton(
-        // shape: RoundedRectangleBorder(
+             style: ButtonStyle(
+               foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
+               backgroundColor: MaterialStateProperty.all<Color>(Colors.yellow),
+             ),
+
+         // shape: RoundedRectangleBorder(
         //   borderRadius: BorderRadius.circular(24),
         // ),
         onPressed: () {
