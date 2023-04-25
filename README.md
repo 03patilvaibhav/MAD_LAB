@@ -19,4 +19,5 @@ This repo consists of all the files related to the MAD_PWA Lab along with Experi
 | Exp 10  | Content Cell  | Content Cell  |
 | Mini Project  | MP  |  <a href=https://github.com/03patilvaibhav/MAD_LAB_08>link</a> |
   
+  
 </div>
