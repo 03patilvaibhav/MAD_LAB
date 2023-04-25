@@ -30,7 +30,7 @@ class Heading extends StatelessWidget {
       child: Row(
         children: [
           Text(
-            'ThingSpeak',
+            'Dashboard',
             textScaleFactor: 2.5,
             style: TextStyle(
               color: Colors.blue,
@@ -40,15 +40,15 @@ class Heading extends StatelessWidget {
           Spacer(),
           logoutButton
               ? Column(
-            children: [
-              IconButton(
-                onPressed: _clearData,
-                tooltip: 'Set new channel',
-                icon: const Icon(Icons.logout),
-              ),
-              Text('Exit'),
-            ],
-          )
+                  children: [
+                    IconButton(
+                      onPressed: _clearData,
+                      tooltip: 'Set new channel',
+                      icon: const Icon(Icons.logout),
+                    ),
+                    Text('Exit'),
+                  ],
+                )
               : SizedBox()
         ],
       ),
@@ -102,7 +102,7 @@ class CardBuilder extends StatelessWidget {
                 heading,
                 textScaleFactor: 1.2,
                 style:
-                TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
+                    TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
               ),
             ),
             Divider(

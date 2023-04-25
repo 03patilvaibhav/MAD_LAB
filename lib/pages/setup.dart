@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mad_lab/util/storage.dart';
-
+import 'package:mad_lab/navbar.dart';
+import 'package:mad_lab/about.dart';
+import 'package:mad_lab/profile.dart';
 import '../widgets/componenets.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -52,35 +54,53 @@ class _SetupState extends State<Setup> {
     }
   }
 
-  // void _readData() async {
-  //   SharedPreferences prefs = await SharedPreferences.getInstance();
-  //   String? v = prefs.getString(StorageKeys.CHANNEL_ID);
-  //   print(v);
-  //   v = prefs.getString(StorageKeys.FIELD_COUNT);
-  //   print(v);
-  //   bool? b = prefs.getBool(StorageKeys.SAVE_STATUS);
-
-  //   if (b == null) {
-  //     print('bool null');
-  //   }
-  //   if (b == true) {
-  //     print('bool true');
-  //   }
-  // }
-
-  // void _clearData() async {
-  //   SharedPreferences prefs = await SharedPreferences.getInstance();
-  //   //Remove String
-  //   prefs.remove(StorageKeys.CHANNEL_ID);
-  //   //Remove bool
-  //   prefs.remove(StorageKeys.FIELD_COUNT);
-  //   //Remove int
-  //   prefs.remove(StorageKeys.SAVE_STATUS);
-  // }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: Colors.blue,
+              ),
+              child: Text(
+                'Menu',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                ),
+              ),
+            ),
+            ListTile(
+              title: Text('My Profile'),
+              onTap: () {
+                Navigator.pop(context); // close the drawer
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Profile()),
+                );
+              },
+            ),
+            ListTile(
+              title: Text('About Us'),
+              onTap: () {
+                Navigator.pop(context); // close the drawer
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Aboutus()),
+                );
+              },
+            ),
+          ],
+        ),
+      ),
+      appBar: AppBar(
+        title: Text("Home"),
+        centerTitle: true,
+        elevation: 0.0,
+      ),
       body: SafeArea(
         child: ListView(
           padding: EdgeInsets.only(
@@ -161,6 +181,9 @@ class _SetupState extends State<Setup> {
           SizedBox(
             height: 20.0,
           ),
+          //   ElevatedButton(onPressed: () {
+          //   Navigator.of(context).pushNamed('profile');
+          // }, child:Text('Register', style: TextStyle(color: Colors.black)))
         ],
       ),
     );
