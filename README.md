@@ -1,16 +1,23 @@
-# mad_lab
+MAD PWA Experiment List
 
-A new Flutter project.
+# MAD_PWA_Summary
+This repo consists of all the files related to the MAD_PWA Lab along with Experiments and Mini project
 
-## Getting Started
+<div align = center>
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| Experiment No.  | Experiment Detail | Github URL |
+| ------------- | ------------- | ------------- |
+| Exp 01  |  First Flutter App  | <a href=https://github.com/03patilvaibhav/MAD_LAB_EXP_01->link</a>  |
+| Exp 02  | Profile Page App (Stateless)  |<a href= https://github.com/03patilvaibhav/MAD_LAB_EXP02 >link</a> |
+| Exp 03  | Profile Page App (Stateful) | <a href=https://github.com/03patilvaibhav/MAD_LAB_EXP03>link</a>  |
+| Exp 04  | ListView and Card Layout  | <a href=https://github.com/03patilvaibhav/MAD-LAB-EXP04>link</a>  |
+| Exp 05  | Firebase Authentication Service  | <a href=https://github.com/poojarinikhil/MADLAB_EXP_05>link</a>   |
+| Exp 06  |  Routes and Consume API  | <a href=https://github.com/Tejass45/MAD_LAB_06>link</a>  |
+| Exp 07  | Navigation Drawer  | <a href=https://github.com/Tejass45/MAD_LAB_07>link</a>  |
+| Exp 08  | Content Cell  | Content Cell  |
+| Exp 09  | Content Cell  | Content Cell  |
+| Exp 10  | Content Cell  | Content Cell  |
+| Mini Project  | MP  |  <a href=https://github.com/03patilvaibhav/MAD_LAB_08>link</a> |
+  
+  
+</div>
