@@ -196,7 +196,7 @@ class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('Profile Page Grp-08'),
         centerTitle: true,
@@ -226,9 +226,9 @@ class Profile extends StatelessWidget {
             ),
             SizedBox(height: 10.0),
             Text(
-              'vaibhav Nikhil Tejas',
+              'Vaibhav Nikhil Tejas',
               style: TextStyle(
-                color: Colors.blue[200],
+                color: Colors.blue,
                 fontWeight: FontWeight.bold,
                 fontSize: 28.0,
                 letterSpacing: 2.0,
@@ -246,7 +246,7 @@ class Profile extends StatelessWidget {
             Text(
               'Mumbai,Malad,sion',
               style: TextStyle(
-                color: Colors.blue[200],
+                color: Colors.blue,
                 fontWeight: FontWeight.bold,
                 fontSize: 28.0,
                 letterSpacing: 2.0,
@@ -264,7 +264,7 @@ class Profile extends StatelessWidget {
             Text(
               '8657267820',
               style: TextStyle(
-                color: Colors.blue[200],
+                color: Colors.blue,
                 fontWeight: FontWeight.bold,
                 fontSize: 28.0,
                 letterSpacing: 2.0,
@@ -275,7 +275,7 @@ class Profile extends StatelessWidget {
               children: <Widget>[
                 Icon(
                   Icons.email,
-                  color: Colors.grey[400],
+                  color: Colors.red,
                 ),
                 SizedBox(width: 10.0),
                 Text(

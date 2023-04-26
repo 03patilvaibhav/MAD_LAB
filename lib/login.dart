@@ -43,7 +43,7 @@ class _MyLoginState extends State<MyLogin> {
       child: CircleAvatar(
         backgroundColor: Colors.transparent,
         radius: 48.0,
-       child: Image(
+        child: Image(
             image: NetworkImage(
                 'https://thumbs.dreamstime.com/b/thermometer-symbol-icon-logo-design-template-vector-178784669.jpg')),
       ),
@@ -97,16 +97,16 @@ class _MyLoginState extends State<MyLogin> {
     final loginButton = Padding(
       padding: EdgeInsets.symmetric(vertical: 10.0),
       child: TextButton(
-             style: ButtonStyle(
-               foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
-               backgroundColor: MaterialStateProperty.all<Color>(Colors.yellow),
-             ),
+        style: ButtonStyle(
+          foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
+          backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+        ),
 
-         // shape: RoundedRectangleBorder(
+        // shape: RoundedRectangleBorder(
         //   borderRadius: BorderRadius.circular(24),
         // ),
         onPressed: () {
-          if (_formKey.currentState?.validate()==true) {
+          if (_formKey.currentState?.validate() == true) {
             signIn(emailController.text, passwordController.text)
                 .then((uid) => {Navigator.of(context).pushNamed('/setup')})
                 .catchError((error) => {processError(error)});
@@ -134,7 +134,7 @@ class _MyLoginState extends State<MyLogin> {
         // shape: RoundedRectangleBorder(
         //   borderRadius: BorderRadius.circular(24),
         // ),
-        
+
         onPressed: () {
           Navigator.of(context).pushNamed('register');
         },
@@ -171,9 +171,9 @@ class _MyLoginState extends State<MyLogin> {
   }
 
   Future<String> signIn(final String email, final String password) async {
-    UserCredential userCredential = await _firebaseAuth.signInWithEmailAndPassword(
-        email: email, password: password);
-    final User user = userCredential.user!;  
+    UserCredential userCredential = await _firebaseAuth
+        .signInWithEmailAndPassword(email: email, password: password);
+    final User user = userCredential.user!;
     return user.uid;
   }
 
