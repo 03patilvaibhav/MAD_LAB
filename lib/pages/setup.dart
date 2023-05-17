@@ -5,6 +5,7 @@ import 'package:mad_lab/about.dart';
 import 'package:mad_lab/profile.dart';
 import '../widgets/componenets.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:mad_lab/login.dart';
 
 class Setup extends StatefulWidget {
   @override
@@ -90,6 +91,16 @@ class _SetupState extends State<Setup> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => Aboutus()),
+                );
+              },
+            ),
+            ListTile(
+              title: Text('Logout'),
+              onTap: () {
+                Navigator.pop(context); // close the drawer
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MyLogin()),
                 );
               },
             ),

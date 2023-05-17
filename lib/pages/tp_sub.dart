@@ -94,7 +94,7 @@ class _TpSubState extends State<TpSub> {
       String channelId = (prefs.getString(StorageKeys.CHANNEL_ID) ?? '1403127');
 
       url =
-      'https://api.thingspeak.com/channels/${channelId}/feeds.json?results=1';
+          'https://api.thingspeak.com/channels/${channelId}/feeds.json?results=1';
     }
 
     // http request
@@ -108,7 +108,7 @@ class _TpSubState extends State<TpSub> {
         // set data
         currentData.date = jsonResponse['feeds'][0]['created_at'].split('T')[0];
         currentData.time =
-        jsonResponse['feeds'][0]['created_at'].split('T')[1].split('Z')[0];
+            jsonResponse['feeds'][0]['created_at'].split('T')[1].split('Z')[0];
 
         currentData.setLoaded();
       });

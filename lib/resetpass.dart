@@ -146,7 +146,7 @@ class _ResetPasswordState extends State<ResetPassword> {
                   FirebaseAuth.instance
                       .sendPasswordResetEmail(email: _emailTextController.text)
                       .then(
-                          (value) => Navigator.pushNamed(context, 'register'));
+                          (value) => Navigator.pushNamed(context, 'login'));
                 })
               ],
             ),
